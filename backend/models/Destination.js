@@ -1,24 +1,22 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const destinationSchema = new mongoose.Schema({
-    title: {
-        type: String,
-        required: true
-    },
-    description: {
-        type: String,
-        required: true
-    },
-    imgSrc: {
-        type: String,
-        required: true
-    },
-    createdAt: {
-        type: Date,
-        default: Date.now
-    }
+  title: String,
+  description: String,
+  imgSrc: String,
+  isPopular: Boolean,
+  location: String,
+  bestTimeToVisit: String,
+  activities: [String],
+  tips: String,
+  mapLink: String,
+  budgetPlan: {
+    low: String,
+    medium: String,
+    high: String,
+  },
+  itinerary: [String],
 });
 
-const Destination = mongoose.model('Destination', destinationSchema);
+export default mongoose.model("Destination", destinationSchema);
 
-export default Destination;
