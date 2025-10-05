@@ -93,6 +93,8 @@ For more detailed instructions, refer to the README.md files in the respective d
 ## Contributors
 
 - Sneha Singh
+- Neha
+- Prithvi
 
 ## License
 
